@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>로또 번호 추천</title>
+
+<style>
+
+body{
+background:#0b0f17;
+color:white;
+font-family:sans-serif;
+margin:0;
+}
+
+.wrap{
+max-width:600px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:10px;
+}
+
+button{
+padding:12px;
+cursor:pointer;
+background:#2563eb;
+border:none;
+color:white;
+font-weight:bold;
+border-radius:6px;
+}
+
+#balls{
+margin-top:15px;
+}
+
+.row{
+display:flex;
+gap:10px;
+margin-bottom:8px;
+}
+
+.ball{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+
+.meta{
+margin-top:10px;
+font-size:12px;
+color:#9ca3af;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="wrap">
+
+<div class="card">
+
+<h2>🎲 로또 번호 추천</h2>
+
+
+<label>
+제외 번호
+</label>
+
+<input
+id="excludeInput"
+placeholder="예: 1,7,13"
+/>
+
+
+<label>
+시드(선택)
+</label>
+
+<input
+id="seedInput"
+placeholder="아무 값 입력 가능"
+/>
+
+
+<button id="btnGenerate">
+
+번호 생성
+
+</button>
+
+
+<div id="balls"></div>
+
+<div id="genMeta"
+class="meta"></div>
+
+
+</div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
