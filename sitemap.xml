@@ -3,8 +3,12 @@
 
 <url>
 <loc>https://pick6.xyz/</loc>
-<lastmod>2026-02-24</lastmod>
 <priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://pick6.xyz/lotto-number-generator.html</loc>
+<priority>0.8</priority>
 </url>
 
 </urlset>
